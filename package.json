@@ -1,0 +1,21 @@
+{
+  "name": "codex-bridge",
+  "version": "1.0.0",
+  "description": "Use your ChatGPT subscription as an LLM backend from anything — OpenAI-compatible HTTP endpoint, MCP server, and Python client. Subscription/CLI auth, no API key.",
+  "type": "module",
+  "bin": {
+    "codex-bridge": "./src/openai-server.mjs",
+    "codex-bridge-cli": "./src/codex-cli.mjs",
+    "codex-bridge-mcp": "./src/mcp-server.mjs"
+  },
+  "scripts": {
+    "serve": "node src/openai-server.mjs",
+    "mcp": "node src/mcp-server.mjs",
+    "doctor": "node src/doctor.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true
+}

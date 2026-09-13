@@ -1,0 +1,13 @@
+{
+  "name": "internal-tools",
+  "owner": {
+    "name": "Shubham Agarwal"
+  },
+  "plugins": [
+    {
+      "name": "codex-bridge",
+      "source": "./",
+      "description": "Use your own ChatGPT subscription as an LLM backend. Registers Codex MCP tools and ships an OpenAI-compatible local endpoint."
+    }
+  ]
+}

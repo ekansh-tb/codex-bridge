@@ -1,0 +1,8 @@
+node_modules/
+output/
+*.log
+.env
+.DS_Store
+# Never commit Codex credentials — they live in ~/.codex/, but guard against copies.
+auth.json
+.codex/

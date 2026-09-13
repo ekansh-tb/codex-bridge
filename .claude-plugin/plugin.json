@@ -1,0 +1,9 @@
+{
+  "name": "codex-bridge",
+  "version": "1.0.0",
+  "description": "Use your own ChatGPT subscription as an LLM backend — OpenAI-compatible HTTP endpoint, MCP tools, and a Python client. Subscription/CLI auth, no API keys.",
+  "author": {
+    "name": "Shubham Agarwal"
+  },
+  "keywords": ["codex", "chatgpt", "mcp", "openai-compatible", "no-api-key"]
+}
