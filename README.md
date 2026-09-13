@@ -120,18 +120,21 @@ cat article.txt | python python/codex_bridge.py --image-prompt
 
 ## 3. MCP server
 
+Installing this as a Claude Code plugin registers the MCP server automatically (see
+`DEPLOY.md`). To wire it up manually instead, from the repo root:
+
 ```bash
-claude mcp add codex -- node "C:/Users/ShubhamAgarwal/Desktop/testImage/codex-bridge/src/mcp-server.mjs"
+claude mcp add codex -- node "$(pwd)/src/mcp-server.mjs"
 ```
 
-For Cursor / other clients, in `mcp.json`:
+For Cursor / other clients, in `mcp.json` — use the absolute path to your own clone:
 
 ```json
 {
   "mcpServers": {
     "codex": {
       "command": "node",
-      "args": ["C:/Users/ShubhamAgarwal/Desktop/testImage/codex-bridge/src/mcp-server.mjs"]
+      "args": ["/absolute/path/to/codex-bridge/src/mcp-server.mjs"]
     }
   }
 }
